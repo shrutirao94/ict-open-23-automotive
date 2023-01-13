@@ -73,76 +73,76 @@
 
 
 % Title portion
-\title{Fancy title}
+\title{Investigating Affective Responses toward In-Video Pedestrian Crossing Actions using Camera and Physiological Sensors}
 
-\author{Xi}
-%\orcid{1234-5678-9012-3456}
+\author{Shruti Rao}
 \affiliation{%
   \institution{Distributed \& Interactive Systems, Centrum Wiskunde \& Informatica}
-  \city{Science Park 123, 1098 XG, Amsterdam}
+  % \city{Science Park 123, 1098 XG, Amsterdam}
   \country{The Netherlands}}
-\email{X@cwi.nl}
+\email{s.rao@cwi.nl}
 
-%\author{Shashank Rao}
-%%\orcid{1234-5678-9012-3456}
-%\affiliation{%
-%  \institution{Multimedia Computing, TU Delft}
-%  \city{Mekelweg 4, 2628 CD Delft}
-%  \country{The Netherlands}}
-%\email{s.p.rao@student.tudelft.nl}
-
-\author{XYZ}
-%\orcid{1234-5678-9012-3456}
+\author{Surjya Ghosh}
 \affiliation{%
   \institution{Distributed \& Interactive Systems, Centrum Wiskunde \& Informatica}
-  \city{Science Park 123, 1098 XG, Amsterdam}
+  % \city{Science Park 123, 1098 XG, Amsterdam}
   \country{The Netherlands}}
+\email{surjya.ghosh@gmail.com}
+
+
+\author{Gerard Pons}
+\affiliation{
+ \institution{Distributed \& Interactive Systems, Centrum Wiskunde \& Informatica}
+ \city{Amsterdam}
+ \country{The Netherlands}}
+\email{gerardponsr@gmail.com}
+
+\author{Thomas R\"{o}ggla}
+\affiliation{
+    \institution{Distributed \& Interactive Systems, Centrum Wiskunde \& Informatica}
+    \city{Amsterdam}
+    \country{The Netherlands}}
+\email{t.roggla@cwi.nl}
+
+
+\author{Abdallah El Ali}
+\affiliation{
+    \institution{Distributed \& Interactive Systems, Centrum Wiskunde \& Informatica}
+    \city{Amsterdam}
+    \country{The Netherlands}}
+\email{aea@cwi.nl}
+
+\author{Pablo Cesar}
+\affiliation{
+    \institution{Distributed \& Interactive Systems, Centrum Wiskunde \& Informatica}
+    \institution{Delft University of Technology}
+    \city{Amsterdam}
+    \country{The Netherlands}}
 \email{p.s.cesar@cwi.nl}
 
 
+\renewcommand\shortauthors{Rao et al.}
 
-\renewcommand\shortauthors{X. et al.}
 
-%\begin{abstract}
-%
-%
-%\end{abstract}
-
-\keywords{fancy keywords}
+\keywords{empathic car, pedestrian behaviour, driver emotion recognition}
 
 \maketitle
 
 \section*{Abstract}
-\textbf{Purpose:}  \\
-
-\noindent \textbf{Methods:}  
-\\
-
-%
-%\begin{figure}[t]
-%\centering
-%\begin{subfigure}{0.30\textwidth}
-%%\hskip-1cm
-%\centering
-%  \includegraphics[scale=0.11]{images/dozee_device.jpg}
-%  \caption{Dozee sleep-monitoring device.}
-%  \label{fig:doz}
-%\end{subfigure}
-%% \hfill
-%\begin{subfigure}{0.30\textwidth}
-%\centering
-%  \includegraphics[scale=0.11]{images/dozee.jpeg}
-%  \caption{Placement of Dozee sensor-sheet}
-%  \label{fig:dozee_use}
-%\end{subfigure}
-%
-%	\caption{\textbf{Dozee sensor-sheet and its usage}}
-%	\label{fig:dozee}
-%\end{figure}
-%
+\textbf{Motivation:}  \\
+\textit{Empathic} cars \footnote{https://www.theguardian.com/business/2018/jan/23/a-car-which-detects-emotions-how-driving-one-made-us-feel}\footnote{https://www.irishtimes.com/business/transport-and-tourism/researchers-developing-empathic-car-technology-1.3900701} are being developed to identify such emotions during driving scenarios. This is because emotions that arise during driving scenarios (particularly anger or stress) are known to adversely impact driving behaviour \cite{2015:tf:jeon}. While environmental (weather, roads) and situational (traffic) factors have been considered for inferring drivers' emotional states \cite{2018:frontiers:habibovic, 2019:MTI:braun, jeon2016don}, the non-verbal interaction between a driver and pedestrian(s) has received less attention. Considering that pedestrian non-verbal behaviour is often a source of negative driver emotion \cite{zepf2019towards}, automatically capturing drivers' affective responses toward pedestrian non-verbal actions can aid in designing empathic, in-vehicle interfaces, thus leading to increased road safety. To investigate the influence of such pedestrian crossing actions, we adopt a highly controlled experimental approach using physiological and camera sensors, where we show pedestrian crossing actions through recorded videos. Specifically, we ask: \textit{How do people's affective responses vary in response to different non-verbal, pedestrian crossing actions shown through video stimuli?}
 
 
-\noindent \textbf{Results:} 
+% \noindent \textbf{Methods:}  
+% \\
+% we conduct an in-lab study where participants with driving experience (\textit{N=21}) watched $10$ short videos of driving scenarios (involving different pedestrian actions) from the publicly available \textit{Joint Attention for Autonomous Driving (JAAD)} dataset \cite{2017:IV:rasouli,2017:iccv:rasouli, Ghosh2022}.
+
+
+% \noindent \textbf{Results:} 
+% ur findings show that our in-lab setup can effectively capture driver affective states from watching videos of non-verbal, pedestrian crossing actions. Specifically, we observe that participants reported higher valence (pleasantness) upon observing positive pedestrian crossing action videos. On the other hand, participants reported higher arousal (excitement) upon watching non-positive pedestrian crossing videos. Additionally, participants' physiological signals (heart rate, skin conductance and pupil diameter) are significantly influenced ($p<0.05$) by the different (positive versus non-positive) non-verbal, pedestrian crossing actions. These signals also vary significantly ($p<0.05$) for different levels of participants' valence (positive versus non-positive) and arousal (high versus non-high) scores. Finally, participants facial temperatures also vary significantly for different levels of participants' valence (positive versus non-positive) and arousal (high versus non-high) scores. 
+
+% Our exploratory work offers two key contributions: \textbf{(1)}: Validation of non-verbal, pedestrian crossing stimuli (JAAD videos) that influence participants' affective states though multi-modal physiological and camera sensors. \textbf{(2)}: Empirical findings which reveal that non-verbal, pedestrian actions influence participants' self-reported emotions (valence and arousal), physiological signals and facial temperatures. In-car emotion recognition research is particularly interested in determining a driver's high arousal as well as low valence states associated with risky driving 
+% \cite{sani2017aggression, Braun2021}. Quantitative results from our study identify positive and non-positive non-verbal pedestrian crossing actions that results in high arousal and low valence participant states. These non-verbal pedestrian actions may aid in identifying risky driving behaviour arising from driver-pedestrian interaction. Moreover, the participant affective cues (physiological, behavioural, and emotion self-reports) may also be used by empathic, in-car interfaces to automatically infer drivers' affective states during driver-pedestrian interactions, as part of an emotion self-regulation framework for improving road safety. 
 
 
 
