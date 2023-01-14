@@ -59,7 +59,6 @@
 %\setcopyright{acmcopyright}
 %\setcopyright{acmlicensed}
 %\setcopyright{rightsretained}
-%\setcopyright{usgov}
 \setcopyright{usgovmixed}
 %\setcopyright{cagov}
 %\setcopyright{cagovmixed}
@@ -75,15 +74,14 @@
 % Title portion
 \title{Investigating Affective Responses toward In-Video Pedestrian Crossing Actions using Camera and Physiological Sensors}
 
-\author{
-    Shruti Rao \textsuperscript{1},
+\author{Shruti Rao \textsuperscript{1},
     Surjya Ghosh \textsuperscript{1},
     Gerard Pons \textsuperscript{1},
     Thomas R\"{o}ggla \textsuperscript{1},
     Abdallah El Ali \textsuperscript{1},
     Pablo Cesar \textsuperscript{1, 2}}
 \affiliation{
-  \\\institution{\textsuperscript{1} Distributed \& Interactive Systems, Centrum Wiskunde \& Informatica}
+  \institution{\textsuperscript{1} Distributed \& Interactive Systems, Centrum Wiskunde \& Informatica}
   \institution{\textsuperscript{2} Delft University of Technology}
   \country{The Netherlands}}
 \email{contact s.rao@cwi.nl}
@@ -95,22 +93,18 @@
 \maketitle
 
 \section*{Abstract}
-% \textbf{Motivation:} 
-Inferring driver affective states during non-verbal driver-pedestrian interactions is significant for developing empathic, in-car interfaces \cite{koch2021drivers}. This is because emotions that arise during driving scenarios are known to adversely impact driving behaviour \cite{2015:tf:jeon, sucha2017pedestrian, locken2019should}. In this exploratory work, we investigated the impact of non-verbal, pedestrian crossing actions from the \textit{Joint Attention for Autonomous Driving (JAAD)} \cite{2017:IV:rasouli} dataset on participants’  affective responses (emotion self-reports, physiological responses and facial temperatures). Specifically, we ask: \textit{How do people's affective responses vary in response to different non-verbal, pedestrian crossing actions shown through video stimuli?}
-
-We conducted an in-lab study where participants with driving experience (\textit{N=21}) watched $10$ non-verbal, pedestrian crossing videos from the \textit{JAAD} dataset \cite{2017:IV:rasouli, Ghosh2022}. We recorded participants' (N=21) real-time, 9-point emotion (valence and arousal) self-reports \cite{bradley1994measuring}, heart rate, pupil diameter, skin conductance, and facial temperature responses for each video (setup in Figure \ref{fig:validation_study_video_page}).
-
-Our findings reveal that positive, non-verbal pedestrian crossing actions in the videos elicit higher valence (pleasantness) ratings from participants, while non-positive (excitement) actions elicit higher arousal. Different pedestrian crossing actions in the videos also have a significant ($p<0.05$) influence on participants' heart rate, pupil diameter, skin conductance, and facial temperatures. As a result, our work offers two key contributions -  (1) Validation of non-verbal, pedestrian crossing stimuli (JAAD videos) that influence participants' affective states though multi-modal physiological and camera sensors. (2) Empirical findings which reveal that non-verbal, pedestrian actions influence participants' self-reported emotions (valence and arousal), physiological signals and facial temperatures. Our future work will involve designing a hybrid simulator setup where participants drive in a simulator and interact with real-world pedestrian crossing actions.
-
-% \textit{Empathic} cars that can identify driver emotions are receiving a growing interest from the automotive industry \footnote{https://www.theguardian.com/business/2018/jan/23/a-car-which-detects-emotions-how-driving-one-made-us-feel}\footnote{https://www.irishtimes.com/business/transport-and-tourism/researchers-developing-empathic-car-technology-1.3900701}. This is because emotions (particularly anger or stress) that arise during driving scenarios are known to adversely impact driving behaviour \cite{2015:tf:jeon}. While environmental and situational (traffic) factors have been considered for inferring drivers' emotional states \cite{2018:frontiers:habibovic, 2019:MTI:braun, jeon2016don}, non-verbal driver-pedestrian interaction which is often a source of negative driver emotion has received less attention \cite{zepf2019towards} . To investigate the influence of pedestrian non-verbal crossing actions, we adopted a controlled lab to collect participants' real-time, affective responses using using physiological and camera sensors. Specifically, we ask: \textit{How do people's affective responses vary in response to different non-verbal, pedestrian crossing actions shown through video stimuli?}
-% \\
+\textbf{Motivation:} 
+Inferring driver affective states during non-verbal driver-pedestrian interactions is significant for developing empathic, in-car interfaces \cite{koch2021drivers}. This is because emotions that arise during driving scenarios are known to adversely impact driving behaviour \cite{2015:tf:jeon, sucha2017pedestrian, locken2019should}. In this exploratory work, we investigated the impact of non-verbal, pedestrian crossing actions from the \textit{Joint Attention for Autonomous Driving (JAAD)} \cite{2017:IV:rasouli} dataset on participants’  affective responses (emotion self-reports, physiological responses and facial temperatures). 
+\\
+% Specifically, we ask: \textit{How do people's affective responses vary in response to different non-verbal, pedestrian crossing actions shown through video stimuli?}
 
 
-% \noindent \textbf{User Study:}  
-% We conducted an in-lab study where participants with driving experience (\textit{N=21}) watched $10$ short videos of driving scenarios from the \textit{Joint Attention for Autonomous Driving (JAAD)} dataset \cite{2017:IV:rasouli, Ghosh2022}. These videos show pedestrians crossing the road and performing non-verbal actions towards the driver such as hand waving, nodding etc \cite{2016:arxiv:jaad}. For each video, participants rated pedestrian actions for valence and arousal using the 9-point discrete Self-Assessment Manikin (SAM) \cite{bradley1994measuring}. Additionally, participants' facial temperatures were recorded using a FLIR Duo Pro R camera. Participants' pupil dilation was captured using a Pupil Labs eye tracker, and physiological signals of heart rate and skin conductance were collected using an Empatica E4 wristband. Recruited participants \textit{(7f, 14m)} were between 22-64 years of age \textit{(M=32.4, SD=11.6)}, and comprised diverse cultural backgrounds (66\% European, 24\% Asian, and 10\% North American). $76\%$ of participants had at least three years of driving experience in Western Europe \textit{(M=9.8, SD=10.7)}, with no reported visual, auditory, or motor impairments.
+\noindent \textbf{User Study:}  
+We conducted an in-lab study where participants with driving experience (\textit{N=21}) watched $10$ non-verbal, pedestrian crossing videos from the \textit{JAAD} dataset \cite{2017:IV:rasouli, Ghosh2022}. We recorded participants' real-time, 9-point emotion (valence and arousal) self-reports \cite{bradley1994measuring}, heart rate, pupil diameter, skin conductance, and facial temperature responses for each video (experimental setup in Figure \ref{fig:exp_setup}).
+\\
 
-
-% \noindent \textbf{Results:} 
+\noindent \textbf{Results:} 
+We find that positive, non-verbal pedestrian crossing actions in the videos elicit higher valence (pleasantness) ratings from participants, while non-positive (excitement) actions elicit higher arousal. Different pedestrian crossing actions in the videos also have a significant ($p<0.05$) influence on participants' heart rate, pupil diameter, skin conductance, and facial temperatures. As a result, our work offers two key contributions - (1) Validation of non-verbal, pedestrian crossing stimuli (JAAD videos) that influence participants' affective states though multi-modal physiological and camera sensors. (2) Empirical findings which reveal that non-verbal, pedestrian actions influence participants' self-reported emotions (valence and arousal), physiological signals and facial temperatures. Our findings provide a first step toward enabling in-car empathic interfaces that draw on behavioural and physiological sensing to in-situ infer driver emotions during non-verbal pedestrian interactions.
 
 \begin{figure}[!htbp]
     \centering	
